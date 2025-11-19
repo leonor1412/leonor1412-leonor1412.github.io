@@ -10,7 +10,7 @@
 👋 Hi! 你好! I'm Leonor Jiang, currently based in Los Angeles, CA and Hangzhou, China—and open to relocation for exciting opportunities.
 
 👀 You’re already here reading this.
-Go ahead, hit that connect or follow button—you never know where a great conversation might lead.
+Thanks for being here— I hope something in my work sparks a bit of curiosity or inspiration.
 
 🎓 Master of Science in Business Analytics @ USC Marshall 
 Graduated from Business Analytics @ CMU Tepper | Minor in Game Design

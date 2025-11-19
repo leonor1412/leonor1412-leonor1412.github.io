@@ -13,184 +13,81 @@
   />
 </head>
 <body>
-  <!-- Top Navigation -->
-  <header class="navbar">
-    <div class="nav-left">
-      <span class="logo">Yuanyan Jiang</span>
-    </div>
-    <nav class="nav-right">
-      <a href="#nutshell">In a nutshell</a>
-      <a href="#experience">Experience</a>
-      <a href="#likes">Likes</a>
-      <a href="Yuanyan%20%28Leonor%29%20Jiang%20Final.pdf" target="_blank">Resume</a>
+  <!-- 顶部导航 -->
+  <header class="topbar">
+    <div class="brand">Yuanyan (Leonor) Jiang</div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">In a nutshell</a></li>
+        <li class="has-sub">
+          <span>Game Design</span>
+          <ul class="submenu">
+            <li><a href="#">Empyrean Path</a></li>
+            <li><a href="#">Celeste Board Game</a></li>
+            <li><a href="#">Starry Cosmos Troupe</a></li>
+          </ul>
+        </li>
+        <li><a href="Yuanyan%20%28Leonor%29%20Jiang%20Final.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="page">
+  <!-- 主体内容：左图右文 -->
+  <main class="wrapper">
+    <section class="content">
+      <div class="profile-photo">
+        <!-- 以后可以用自己的头像替换这里的占位符 -->
+        <!-- <img src="assets/profile.jpg" alt="Profile photo of Leonor" /> -->
+        <div class="photo-placeholder">YJ</div>
+      </div>
 
-    <!-- Section: In a nutshell + 3 cards -->
-    <section id="nutshell" class="section">
-      <h1 class="page-title">In a nutshell</h1>
-      <p class="intro-text">
-        Hi, I’m <strong>Yuanyan “Leonor” Jiang</strong> — a data analyst and game design
-        enthusiast exploring how analytics, systems thinking, and interactive storytelling
-        can shape better learning experiences.
-      </p>
-      <p class="intro-text">
-        I’m currently pursuing the <strong>M.S. in Business Analytics at USC Marshall</strong>,
-        after completing my <strong>B.S. in Business Analytics</strong> with a
-        <strong>Game Design minor</strong> at Carnegie Mellon University.
-      </p>
+      <div class="profile-text">
+        <h1>In a nutshell</h1>
 
-      <div class="cards-row">
-        <!-- Education -->
-        <div class="card">
-          <div class="card-header">
-            <span class="card-icon">🎓</span>
-            <span class="card-title">Education</span>
-          </div>
-          <div class="card-body">
-            <div class="edu-item">
-              <div class="edu-year">2024–2026</div>
-              <div class="edu-text">
-                <strong>USC Marshall School of Business</strong><br />
-                M.S. in Business Analytics
-              </div>
-            </div>
-            <div class="edu-item">
-              <div class="edu-year">2021–2025</div>
-              <div class="edu-text">
-                <strong>Carnegie Mellon University</strong><br />
-                B.S. in Business Administration (Business Analytics &amp; Technologies)<br />
-                Minor in Game Design
-              </div>
-            </div>
-          </div>
-        </div>
+        <p>👋 Hi! 你好! I'm Leonor Jiang, currently based in Los Angeles, CA and Hangzhou, China—and open to relocation for exciting opportunities.</p>
 
-        <!-- Skill Set -->
-        <div class="card">
-          <div class="card-header">
-            <span class="card-icon">🛠</span>
-            <span class="card-title">Skill Set</span>
-          </div>
-          <div class="card-body two-col">
-            <div>
-              <h4>Programming</h4>
-              <p>Python, R, SQL</p>
-              <h4>Analytics</h4>
-              <p>Predictive modeling, A/B testing, Time series</p>
-            </div>
-            <div>
-              <h4>Visualization</h4>
-              <p>Tableau, Power BI, Qlik Sense</p>
-              <h4>Tools</h4>
-              <p>Adobe Analytics, Google Data Studio, Looker</p>
-            </div>
-          </div>
-        </div>
+        <p>👀 You’re already here reading this.<br>
+        Thanks for being here— I hope something in my work sparks a bit of curiosity or inspiration.</p>
 
-        <!-- Highlights -->
-        <div class="card">
-          <div class="card-header">
-            <span class="card-icon">⭐</span>
-            <span class="card-title">Highlights</span>
-          </div>
-          <div class="card-body">
-            <ul class="card-list">
-              <li>Analyzed player behavior &amp; market data at a global game studio (miHoYo).</li>
-              <li>Validated trading strategies and built reports at Caitong Securities.</li>
-              <li>Designed educational &amp; narrative games through iterative playtesting.</li>
-              <li>Vlogger capturing daily life, travel, and study stories.</li>
-            </ul>
-          </div>
-        </div>
+        <p>🎓 <strong>Master of Science in Business Analytics @ USC Marshall</strong><br>
+        Graduated from Business Analytics @ CMU Tepper | Minor in Game Design<br>
+        Also a sushi lover, traveler, adventure seeker, and vlogger who captures life one story at a time.</p>
+
+        <p>📊 <strong>Data Analyst | Strategy &amp; Analytics Enthusiast</strong><br>
+        I’ve worked on predictive modeling, market research, and optimization in finance, gaming, and business operations. From analyzing user behavior at miHoYo to validating trading strategies at Caitong Securities, I love turning messy data into meaningful insights that drive business action.</p>
+
+        <p>🛠 <strong>Core Skills</strong><br>
+        ▪ Programming: Python, R<br>
+        ▪ Data Visualization: Tableau, Power BI, Qlik Sense, Matplotlib, Seaborn, Geopandas, ggplot2<br>
+        ▪ Databases: SQL, PostgreSQL, MongoDB, Valentina Studio<br>
+        ▪ Machine Learning: Random Forest, GBRT, Logistic Regression, Time Series, K-Means<br>
+        ▪ Bonus: A/B testing, Adobe Marketing Cloud, Google Data Studio, Looker</p>
+
+        <p>✨ Aspire to bridge business, data, and design—turning analytics into powerful tools for understanding people and building smarter, more human products.</p>
+
+        <p>🎮 <strong>Game Enthusiast &amp; System Thinker</strong><br>
+        From patch notes to prototypes—I explore the systems and psychology behind games, designing and refining experiences at CMU through data and player feedback.</p>
+
+        <p>🎲 Come play with me—or hit me up if you need a game buddy!<br>
+        📩 Always happy to chat about gaming, analytics, or anything interesting.<br>
+        📸 Also down to mutual follow on Instagram and Rednotes!</p>
+
+        <p class="resume-line">
+          📄 My full resume is available
+          <a href="Yuanyan%20%28Leonor%29%20Jiang%20Final.pdf" target="_blank">here</a>.
+        </p>
+
+        <p class="contact">
+          If you have additional questions, feel free to reach out at
+          <span>your.email@usc.edu</span>. Thank you.
+        </p>
+
+        <p class="copyright">
+          Copyright © 2025 Yuanyan (Leonor) Jiang
+        </p>
       </div>
     </section>
-
-    <!-- Section: Experience (simple timeline style) -->
-    <section id="experience" class="section">
-      <h2 class="section-title">Experience Snapshot</h2>
-      <div class="timeline">
-
-        <div class="timeline-column">
-          <h3 class="timeline-title">Analytics &amp; Strategy</h3>
-
-          <div class="timeline-item">
-            <div class="timeline-year">miHoYo</div>
-            <div class="timeline-content">
-              <strong>Data Analyst Intern</strong><br />
-              Analyzed 17K+ games &amp; 3K+ apps, supported UA and marketing decisions
-              with player behavior and market data.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-year">Caitong Securities</div>
-            <div class="timeline-content">
-              <strong>Financial Analyst Intern</strong><br />
-              Backtested momentum factors across sectors, turning research into
-              actionable insights for trading strategies.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-year">City Construction Group</div>
-            <div class="timeline-content">
-              <strong>Business Analyst Intern</strong><br />
-              Built dashboards for store-level performance and supported M&amp;A due diligence.
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-column">
-          <h3 class="timeline-title">Game Design Projects</h3>
-
-          <div class="timeline-item">
-            <div class="timeline-year">Empyrean Path</div>
-            <div class="timeline-content">
-              Interactive sex education RPG using choice-based dialogue, humor,
-              and rollback mechanics to support safer decision-making.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-year">Celeste Board Game</div>
-            <div class="timeline-content">
-              Transformational tabletop game inspired by <em>Celeste</em>, focusing on
-              emotional resilience and player reflection.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-year">Starry Cosmos Troupe</div>
-            <div class="timeline-content">
-              Narrative TTRPG using star-sign personas, performance mechanics,
-              and guided storytelling phases.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Section: Likes -->
-    <section id="likes" class="section">
-      <h2 class="section-title">Likes &amp; Little Joys</h2>
-      <div class="tag-row">
-        <span class="tag">🍣 Sushi</span>
-        <span class="tag">🎮 Games</span>
-        <span class="tag">📸 Vlogging</span>
-        <span class="tag">🧳 Travel</span>
-        <span class="tag">📚 Storytelling</span>
-        <span class="tag">🎲 Tabletop</span>
-      </div>
-    </section>
-
   </main>
-
-  <footer class="footer">
-    © 2025 Yuanyan (Leonor) Jiang
-  </footer>
 </body>
 </html>

@@ -270,3 +270,125 @@ body {
   color: var(--accent);
 }
 
+/* =========================================
+   NUTSHELL PAGE – BARBIE PINK THEME
+   ========================================= */
+
+.nutshell-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  width: 95%;
+  margin: 40px auto;
+  border: 1px solid #ff4eb6;
+}
+
+/* ===== Section Label (pink banner) ===== */
+.section-label {
+  display: inline-block;
+  background: #ff4eb6;
+  color: #000;
+  padding: 6px 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 2px solid #ff86cf;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.section-label .icon {
+  margin-right: 6px;
+}
+
+/* ===== Blocks ===== */
+.section-block {
+  margin-bottom: 38px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 25px;
+}
+
+/* ===== 3 Column Layout ===== */
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.edu-year {
+  color: #ff4eb6;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.edu-item {
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.skill-col {
+  border: 1px solid #444;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* ===== Honors ===== */
+.honors-list li {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+/* ===== Experience Box ===== */
+.exp-box {
+  margin-top: 15px;
+  border: 1px solid #444;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 78, 182, 0.05);
+}
+
+.exp-header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: #ff4eb6;
+}
+
+.exp-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.exp-item {
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 8px;
+  color: #ccc;
+}
+
+.exp-year {
+  color: #ff4eb6;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* ===== Likes ===== */
+.likes-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.likes-row span {
+  padding: 6px 12px;
+  background: #ff4eb6;
+  border-radius: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+

@@ -225,3 +225,48 @@ body {
     align-self: center;
   }
 }
+/* ===== Timeline ===== */
+.timeline { border-left: 3px solid var(--accent); padding-left: 20px; margin-bottom: 35px; }
+.timeline-item { margin-bottom: 22px; }
+.timeline-year { font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+
+/* ===== Honors ===== */
+.honors li { color: var(--text-muted); margin-bottom: 8px; }
+
+/* ===== Experience Box (like reference website) ===== */
+.experience-box {
+  margin-top: 25px;
+  padding: 18px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.exp-item {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: var(--bg-panel);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+}
+
+.exp-year { font-weight: 700; color: var(--accent); margin-bottom: 3px; }
+
+/* ===== Likes ===== */
+.likes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.likes span {
+  padding: 6px 12px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  color: var(--accent);
+}
+

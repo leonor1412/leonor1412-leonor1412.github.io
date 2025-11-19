@@ -35,7 +35,8 @@ From patch notes to prototypes—I explore the systems and psychology behind gam
 📩 Always happy to chat about gaming, analytics, or anything interesting.
 📸 Also down to mutual follow on Instagram and Rednotes!
 
-My full resume is available [here](Yuanyan(Leonor Jiang Final.pdf).
+My full resume is available [here]([📄 View My Resume](Yuanyan%20%28Leonor%29%20Jiang%20Final.pdf)
+).
 
 If you have additional questions, please feel free to reach out via leonor.jiang@gmail.com.  
 Thank you.

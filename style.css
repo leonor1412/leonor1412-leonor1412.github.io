@@ -21,11 +21,10 @@ body {
   color: var(--text);
 }
 
-/* 顶部导航条（名字 + 三个 bar） */
+/* ───────── 顶部导航 ───────── */
 
 .topbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 14px 32px;
   background: rgba(0, 0, 0, 0.9);
@@ -33,22 +32,42 @@ body {
   backdrop-filter: blur(14px);
 }
 
+/* 左侧名字 */
 .brand {
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--accent);
   font-size: 0.95rem;
+  margin-right: 40px;
 }
 
-.menu ul {
+/* 整体菜单容器 */
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* 左侧 tab：Yuanyan Jiang / In a nutshell / Game Design */
+.menu-left {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   font-size: 0.9rem;
 }
 
-.menu a {
+/* 右侧图标：✉️ / in */
+.menu-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+/* 左侧 tab 样式 */
+.menu-left a {
   color: var(--text-muted);
   text-decoration: none;
   padding-bottom: 3px;
@@ -56,13 +75,30 @@ body {
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.menu a:hover,
-.menu a.active {
+.menu-left a:hover,
+.menu-left a.active {
   color: var(--accent);
   border-bottom-color: var(--accent);
 }
 
-/* 页面整体宽度 & 居中 */
+/* 右侧 icon 样式 */
+.icon-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.icon-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* ───────── 通用布局 ───────── */
 
 .wrapper {
   max-width: 860px;
@@ -70,7 +106,7 @@ body {
   padding: 0 20px;
 }
 
-/* 中间这块卡片 */
+/* 卡片容器：首页介绍 / contact 共用 */
 
 .card {
   background: var(--bg-panel);
@@ -80,7 +116,7 @@ body {
   padding: 26px 26px 28px;
 }
 
-/* 头像区域 */
+/* ───────── 首页头像 + 文本 ───────── */
 
 .hero-photo {
   display: flex;
@@ -97,7 +133,7 @@ body {
   box-shadow: 0 0 24px rgba(255, 92, 168, 0.3);
 }
 
-/* 文本区域 */
+/* 文本区 */
 
 .intro-text h1 {
   font-size: 1.6rem;
@@ -115,7 +151,7 @@ body {
   color: var(--text);
 }
 
-/* 简历、邮箱等 */
+/* 简历 / 邮箱 / copyright */
 
 .resume-line a {
   color: var(--accent);
@@ -135,9 +171,28 @@ body {
   margin-top: 4px;
   font-size: 0.85rem;
   color: #8f8fa1;
+  text-align: left;
 }
 
-/* 响应式 */
+/* ───────── Contact 页面左右布局 ───────── */
+
+.contact-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-left p {
+  margin-bottom: 6px;
+}
+
+.contact-right img {
+  max-width: 260px;
+  height: auto;
+}
+
+/* ───────── 响应式 ───────── */
 
 @media (max-width: 800px) {
   .topbar {
@@ -146,13 +201,27 @@ body {
     gap: 6px;
   }
 
-  .menu ul {
+  .menu-left {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 16px;
+  }
+
+  .menu-right {
+    margin-left: 0;
+    margin-top: 6px;
   }
 
   .profile-img {
     width: 180px;
     height: 180px;
+  }
+
+  .contact-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-right {
+    align-self: center;
   }
 }

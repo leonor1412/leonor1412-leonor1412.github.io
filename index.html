@@ -13,14 +13,28 @@
   />
 </head>
 <body>
-  <!-- 顶部导航 -->
+  <!-- 顶部导航：左名字，中间三个tab，右两个icon -->
   <header class="topbar">
     <div class="brand">Yuanyan Jiang</div>
+
     <nav class="menu">
-      <ul>
+      <!-- 左边项目栏 -->
+      <ul class="menu-left">
         <li><a href="index.html" class="active">Yuanyan Jiang</a></li>
         <li><a href="nutshell.html">In a nutshell</a></li>
         <li><a href="gamedesign.html">Game Design</a></li>
+      </ul>
+
+      <!-- 右边图标 -->
+      <ul class="menu-right">
+        <li>
+          <a href="contact.html" class="icon-link" title="Contact">✉️</a>
+        </li>
+        <li>
+          <!-- 把下面链接改成你自己的 LinkedIn -->
+          <a href="https://www.linkedin.com/in/你的用户名" target="_blank"
+             class="icon-link" title="LinkedIn">in</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -28,10 +42,9 @@
   <!-- 主体 -->
   <main class="wrapper">
     <section class="card">
-
       <!-- 头像 -->
       <div class="hero-photo">
-        <!-- 如果文件名是 “personal profile.png”，GitHub 实际路径是 personal%20profile.png -->
+        <!-- 如果文件名是 personal profile.png，路径要写成 personal%20profile.png -->
         <img src="personal%20profile.png"
              alt="Profile photo of Yuanyan (Leonor) Jiang"
              class="profile-img" />
@@ -63,13 +76,13 @@
         From patch notes to prototypes—I explore the systems and psychology behind games, designing and refining experiences at CMU through data and player feedback.</p>
 
         <p>🎲 Come play with me—or hit me up if you need a game buddy!<br>
-        📩 Always happy to chat about analytics, games or anything interesting.</p>
+        📩 Always happy to chat about gaming, analytics, or anything interesting.<br>
+        📸 Also down to mutual follow on Instagram and Rednotes!</p>
 
         <p>
-          👀 You’re already here reading this.<br>
-          Go ahead and connect me on
-          <a href="https://www.linkedin.com/in/leonorjiang" target="_blank">LinkedIn</a>
-          to learn more about my professional experiences—you never know where a great conversation might lead.<br>
+          👀 You’re already here reading this. For a fuller picture of my experience, you can also check my
+          <a href="https://www.linkedin.com/in/leonorjiang" target="_blank">LinkedIn</a> profile.<br>
+          Go ahead, hit that connect or follow button—you never know where a great conversation might lead.<br>
           Thanks for being here— I hope something in my work sparks a bit of curiosity or inspiration.
         </p>
 
@@ -91,3 +104,4 @@
   </main>
 </body>
 </html>
+

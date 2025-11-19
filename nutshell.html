@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>In a nutshell – Yuanyan (Leonor) Jiang</title>
+  <title>In a nutshell – Yuanyan Jiang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,48 +16,49 @@
     <nav class="menu">
       <ul class="menu-left">
         <li><a href="index.html">Yuanyan Jiang</a></li>
-        <li><a href="nutshell.html" class="active">In a nutshell</a></li>
+        <li><a class="active" href="nutshell.html">In a nutshell</a></li>
         <li><a href="gamedesign.html">Game Design</a></li>
       </ul>
 
       <ul class="menu-right">
         <li><a href="contact.html" class="icon-link">✉️</a></li>
-        <li><a href="https://www.linkedin.com/in/你的链接" target="_blank" class="icon-link">in</a></li>
+        <li><a href="https://www.linkedin.com/in/你的用户名" target="_blank" class="icon-link">in</a></li>
       </ul>
     </nav>
   </header>
 
-
   <main class="wrapper">
 
-    <!-- MAIN CARD -->
-    <section class="nutshell-card">
+    <section class="nutshell-container">
 
-      <!-- ===================== Education ===================== -->
+      <!-- ======================= EDUCATION ======================= -->
       <div class="section-block">
-        <div class="section-label">
-          <span class="icon">🎓</span> Education History
+
+        <div class="section-header">
+          <span class="label-icon">🎓</span>
+          <span class="label-text">Education History</span>
         </div>
 
-        <div class="section-content three-col">
+        <div class="section-box">
 
-          <div class="edu-item">
+          <div class="edu-row">
             <div class="edu-year">2025–2026</div>
-            <div class="edu-text">
+            <div class="edu-info">
               <strong>University of Southern California</strong><br>
               M.S. in Business Analytics<br>
-              • Awarded USC Merit-based Scholarship ($10,000)
+              <span class="edu-grey">• USC Merit-based Scholarship ($10,000)</span>
             </div>
           </div>
 
-          <div class="edu-item">
+          <div class="edu-row">
             <div class="edu-year">2021–2025</div>
-            <div class="edu-text">
+            <div class="edu-info">
               <strong>Carnegie Mellon University</strong><br>
-              B.S. in Business Administration<br>
-              Minor in Game Design<br>
-              • Dean’s List (5 semesters)<br>
-              • University Honors
+              B.S. in Business Administration · Minor in Game Design<br>
+              <span class="edu-grey">
+                • Dean’s List (5 semesters)<br>
+                • University Honors
+              </span>
             </div>
           </div>
 
@@ -65,74 +66,92 @@
       </div>
 
 
-      <!-- ===================== Skills ===================== -->
-      <div class="section-block">
-        <div class="section-label">
-          <span class="icon">🧰</span> Skill Set
+
+      <!-- ======================= SKILLS & HONORS ======================= -->
+      <div class="three-col-wrapper">
+
+        <!-- Skill Set -->
+        <div class="section-block">
+          <div class="section-header">
+            <span class="label-icon">🧠</span>
+            <span class="label-text">Skill Set</span>
+          </div>
+
+          <div class="section-box">
+            <div class="skills-grid">
+              <div>
+                <strong>Marketing Analytics</strong><br>
+                SQL, Python (Pandas), Excel,<br>
+                A/B testing, Looker,<br>
+                Google Data Studio, Adobe Analytics
+              </div>
+
+              <div>
+                <strong>Visualization</strong><br>
+                Tableau, Power BI,<br>
+                Qlik Sense, Matplotlib,<br>
+                Seaborn, ggplot2
+              </div>
+
+              <div>
+                <strong>Machine Learning</strong><br>
+                Regression, Random Forest, GBRT,<br>
+                Time Series, K-Means, KNN<br><br>
+
+                <strong>Languages</strong><br>
+                Chinese, English, Korean
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="section-content three-col">
-
-          <div class="skill-col">
-            <strong>Marketing Analytics</strong><br>
-            SQL (NoSQL), Python (Pandas), Excel,<br>
-            A/B testing, Looker, Google Data Studio,<br>
-            Adobe Analytics
+        <!-- Honors -->
+        <div class="section-block">
+          <div class="section-header">
+            <span class="label-icon">🏆</span>
+            <span class="label-text">Honors</span>
           </div>
 
-          <div class="skill-col">
-            <strong>Visualization & BI</strong><br>
-            Tableau, Power BI, Qlik Sense,<br>
-            Matplotlib, Seaborn, ggplot2,<br>
-            Excel PivotCharts
+          <div class="section-box">
+            <ul class="honors-list">
+              <li>CMU Dean’s List (5 semesters)</li>
+              <li>CMU University Honors</li>
+              <li>USC Merit-based Scholarship</li>
+              <li>SQL Group Competition – 2nd Place</li>
+            </ul>
           </div>
-
-          <div class="skill-col">
-            <strong>Machine Learning</strong><br>
-            Linear / Logistic Regression,<br>
-            Random Forest, GBRT,<br>
-            Time Series, K-Means, KNN<br><br>
-            <strong>Languages:</strong><br>
-            Chinese, English, Korean
-          </div>
-
         </div>
+
       </div>
 
 
-      <!-- ===================== Honors ===================== -->
+
+      <!-- ======================= EXPERIENCE ======================= -->
       <div class="section-block">
-        <div class="section-label">
-          <span class="icon">🏆</span> Honors
+
+        <div class="section-header">
+          <span class="label-icon">💼</span>
+          <span class="label-text">Experience</span>
         </div>
 
-        <div class="section-content three-col">
+        <div class="section-box exp-box">
 
-          <ul class="honors-list">
-            <li>CMU Dean’s List (5 semesters)</li>
-            <li>CMU University Honors</li>
-            <li>USC Merit-based Scholarship</li>
-            <li>SQL Group Competition – 2nd Place</li>
-          </ul>
-
-        </div>
-      </div>
-
-
-      <!-- ===================== Experience ===================== -->
-      <div class="section-block">
-        <div class="section-label">
-          <span class="icon">💼</span> Experience
-        </div>
-
-        <div class="exp-box">
-
-          <div class="exp-header-row">
-            <span class="exp-header-left">Work Experience</span>
-            <span class="exp-header-right">Project Experience</span>
+          <!-- Pink / Purple Bar -->
+          <div class="exp-topbar">
+            <div class="exp-left">Work Experience</div>
+            <div class="exp-right">Project Experience</div>
           </div>
 
-          <div class="exp-timeline">
+          <!-- Timeline Divider -->
+          <div class="timeline-line">
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+          </div>
+
+          <!-- Experience Cards -->
+          <div class="exp-grid">
 
             <div class="exp-item">
               <div class="exp-year">2023</div>
@@ -147,47 +166,4 @@
             </div>
 
             <div class="exp-item">
-              <div class="exp-year">2024.06</div>
-              <strong>Caitong Securities</strong><br>
-              Financial Analyst Intern
-            </div>
-
-            <div class="exp-item">
-              <div class="exp-year">2024.09</div>
-              <strong>Kearney Consulting</strong><br>
-              Student Consultant
-            </div>
-
-            <div class="exp-item">
-              <div class="exp-year">2025</div>
-              <strong>City Construction Group</strong><br>
-              Business Analyst Intern
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-      <!-- ===================== Likes ===================== -->
-      <div class="section-block">
-        <div class="section-label">
-          <span class="icon">👯</span> Likes
-        </div>
-
-        <div class="likes-row">
-          <span>🍣 Omakase</span>
-          <span>🎮 Gaming</span>
-          <span>✈️ Travel</span>
-          <span>📸 Vlogging</span>
-          <span>🧩 Mystery</span>
-          <span>🍳 Cooking</span>
-        </div>
-      </div>
-
-    </section>
-
-  </main>
-
-</body>
-</html>
+              <div class="exp-y

@@ -270,125 +270,172 @@ body {
   color: var(--accent);
 }
 
-/* =========================================
-   NUTSHELL PAGE – BARBIE PINK THEME
-   ========================================= */
+/* ===========================================================
+   BARBIE CYBER BLACK × PINK × PURPLE — 1:1 REPLICA LAYOUT
+   =========================================================== */
 
-.nutshell-card {
-  background: #111;
-  padding: 30px;
-  border-radius: 12px;
-  width: 95%;
-  margin: 40px auto;
-  border: 1px solid #ff4eb6;
+:root {
+  --pink: #ff4eb6;
+  --pink-light: #ff85d4;
+  --purple: #a46cff;
+  --text-light: #f1f1f1;
+  --text-grey: #bbbbbb;
+  --card-bg: #0a0a0a;
+  --border: #ff4eb6;
 }
 
-/* ===== Section Label (pink banner) ===== */
-.section-label {
-  display: inline-block;
-  background: #ff4eb6;
-  color: #000;
-  padding: 6px 14px;
-  font-weight: 700;
+/* Container */
+.nutshell-container {
+  width: 96%;
+  margin: 30px auto;
+  color: var(--text-light);
+}
+
+/* ============ Section Label Bar ============ */
+.section-header {
+  display: flex;
+  align-items: center;
+  background: var(--pink);
+  border: 2px solid var(--pink-light);
+  padding: 6px 16px;
+  width: fit-content;
   border-radius: 6px;
-  border: 2px solid #ff86cf;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  font-weight: 700;
   font-size: 1.1rem;
+  color: #000;
 }
 
-.section-label .icon {
-  margin-right: 6px;
+.label-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
 }
 
-/* ===== Blocks ===== */
-.section-block {
-  margin-bottom: 38px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 25px;
+.section-box {
+  background: var(--card-bg);
+  border: 1px solid var(--pink);
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
-/* ===== 3 Column Layout ===== */
-.three-col {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 12px;
+/* ============ Education Rows ============ */
+.edu-row {
+  display: flex;
+  margin-bottom: 16px;
 }
 
 .edu-year {
-  color: #ff4eb6;
+  width: 130px;
   font-weight: 700;
-  margin-bottom: 4px;
+  color: var(--pink);
 }
 
-.edu-item {
-  border: 1px solid #444;
-  padding: 10px;
-  border-radius: 8px;
+.edu-grey {
+  color: var(--text-grey);
 }
 
-.skill-col {
-  border: 1px solid #444;
+/* ============ Two-Column Section Layout ============ */
+.three-col-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.honors-list li {
+  margin-bottom: 8px;
+  color: var(--text-grey);
+}
+
+/* ============ EXPERIENCE BLOCK ============ */
+.exp-box {
+  padding-top: 0;
+}
+
+/* Pink/Purple Bar */
+.exp-topbar {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 38px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.exp-left {
+  background: var(--pink);
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  font-weight: 700;
+}
+
+.exp-right {
+  background: var(--purple);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  font-weight: 700;
+}
+
+/* Timeline line */
+.timeline-line {
+  position: relative;
+  height: 40px;
+  border-bottom: 1px dashed #666;
+  margin-bottom: 12px;
+}
+
+.tick {
+  position: absolute;
+  height: 14px;
+  border-left: 1px solid #666;
+  top: 0;
+}
+
+.tick:nth-child(1) { left: 20%; }
+.tick:nth-child(2) { left: 40%; }
+.tick:nth-child(3) { left: 60%; }
+.tick:nth-child(4) { left: 80%; }
+
+/* Experience Cards */
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.exp-item {
+  border: 1px solid var(--pink);
   padding: 12px;
   border-radius: 8px;
 }
 
-/* ===== Honors ===== */
-.honors-list li {
-  margin-bottom: 8px;
-  color: #ccc;
-}
-
-/* ===== Experience Box ===== */
-.exp-box {
-  margin-top: 15px;
-  border: 1px solid #444;
-  padding: 20px;
-  border-radius: 10px;
-  background: rgba(255, 78, 182, 0.05);
-}
-
-.exp-header-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 14px;
-  font-weight: 700;
-  color: #ff4eb6;
-}
-
-.exp-timeline {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-}
-
-.exp-item {
-  border: 1px solid #444;
-  padding: 10px;
-  border-radius: 8px;
-  color: #ccc;
-}
-
 .exp-year {
-  color: #ff4eb6;
   font-weight: 700;
+  color: var(--pink);
   margin-bottom: 5px;
 }
 
-/* ===== Likes ===== */
-.likes-row {
+/* ============ Likes ============ */
+.likes-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 12px;
+  gap: 14px;
 }
 
-.likes-row span {
+.likes-box span {
   padding: 6px 12px;
-  background: #ff4eb6;
-  border-radius: 20px;
+  background: var(--pink);
+  border-radius: 16px;
   color: #000;
   font-weight: 600;
 }
-
-
